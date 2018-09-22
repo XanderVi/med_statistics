@@ -29,7 +29,6 @@ for i in range(max_patient):
         info = sheet.cell(row=i+1, column=j+1).value
         patient_info.append(info)
         main_sheet[cells[j]+str(i+1)] = str(info)
-    #print(patient_info)
 
 main_wb.create_sheet(title='Sheet2')
 main_sheet = main_wb['Sheet2']
